@@ -5,8 +5,10 @@ import os
 import openpyxl
 from openpyxl import Workbook
 
-TOKEN = "7902562393:AAEyVh_TaJ37T2SFxXT6zDykMfF43Ln7mYA"
-ADMIN_ID = 6526506965  # Ganti dengan ID Telegram kamu
+import os
+
+TOKEN = os.environ["TOKEN"]
+ADMIN_ID = int(os.environ["ADMIN_ID"])
 
 user_data = {}
 excel_file = "data_user.xlsx"
